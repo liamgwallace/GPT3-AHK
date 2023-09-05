@@ -2,6 +2,8 @@
 
 OpenAI_AHK_quick_chat is an AutoHotkey (AHK) script that integrates GPT-3 AI from OpenAI for any input field on your computer. It's a simple tool to send queries to the GPT-3 model and get responses in your clipboard.
 
+I have only tested with Windows!! feedback is welcome
+
 ## Installation
 
 1. Install AutoHotkey from [here](https://www.autohotkey.com/).
@@ -15,18 +17,18 @@ OpenAI_AHK_quick_chat is an AutoHotkey (AHK) script that integrates GPT-3 AI fro
 1. The default shortcut to invoke the script is `Alt + Left Click`.
 2. Once invoked, your clipboard contents will be filled into the text box.
 3. Select an agent and write your message, then press `OK`. 
-    - Choose `Try Again` to continue the conversation.
-    - Select `Cancel` or `Continue` to close the dialogue window.
-4. The response from GPT-3 will be copied to your clipboard.
+    - Choose `Try Again` to continue the conversation - previous messages are 'remembered'.
+    - Select `Cancel` to close the dialogue window - AI response is in your clipboard.
+    - Select `Continue` to close the dialogue window - AI response is in your clipboard and auto pasted .
    
 To change your API key or modify the shortcut key, edit the 'settings.ini' file with a text editor.
 
 To create or modify agents, edit the 'agents.ini' file. When adding a new agent:
 - Assign a unique number to 'Name', 'SystemMsg', and 'Temperature' values.
-- Update the 'ListLength' value.
+- Update the 'ListLength' value to equal the number of agents
   (this is a bit of a janky workaround, sorry)
 
-To exit or reload the script after making changes, look for the robot icon in your system tray, usually located in the bottom right corner of your screen.
+To exit or reload the script after making changes, look for the robot icon in your system tray.
 
 ## File structure
 
